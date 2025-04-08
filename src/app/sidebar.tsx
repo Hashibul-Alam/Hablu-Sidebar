@@ -68,7 +68,6 @@ export default function SidebarLayout() {
 
   return (
     <>
-      {/* Tooltip for collapsed menu */}
       {!isOpen && tooltip && (
         <div
           className="fixed z-50 px-3 py-1 text-[9px] text-white bg-slate-900 rounded-md shadow-lg transform -translate-x-1/2 -translate-y-full animate-fade-in"
@@ -84,8 +83,7 @@ export default function SidebarLayout() {
         </div>
       )}
 
-      {/* Header */}
-      <div className="fixed border-b border-slate-800 top-0 left-0 right-0 h-16 bg-slate-950/80 backdrop-blur-sm flex items-center px-6 z-40">
+      <div className="fixed top-0 left-0 right-0 h-16 bg-slate-950/80 backdrop-blur-sm border-b border-slate-800 flex items-center px-6 z-40">
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center gap-4">
             <button
@@ -101,13 +99,11 @@ export default function SidebarLayout() {
         </div>
       </div>
 
-      {/* Sidebar */}
       <div
-        className={`fixed top-16 left-0 h-[calc(100vh-4rem)] bg-slate-950/80 backdrop-blur-sm border-r border-slate-800 flex flex-col transition-all duration-300 ${
+        className={`fixed top-16 left-0 bottom-0 bg-slate-950/80 backdrop-blur-sm border-r border-slate-800 flex flex-col transition-all duration-300 ${
           isOpen ? 'w-80' : 'w-24'
         }`}
       >
-        {/* Sidebar Items (Scrollable) */}
         <div className="flex-1 overflow-y-auto py-4 px-4">
           <nav className="space-y-1">
             <SidebarItem icon={<DashIcon />} label="Dashboard" href="/dashboard" />
@@ -121,7 +117,7 @@ export default function SidebarLayout() {
           </nav>
         </div>
 
-        <div className="border-t border-gray-700 px-4 py-4 shrink-0">
+        <div className="border-t border-gray-700 px-4 py-4">
           <SidebarItem icon={<SupportIcon />} label="Help Center" href="/help" />
           <div className="flex items-center gap-3 mt-4 ms-1.5 text-white text-lg font-medium">
             <Image
