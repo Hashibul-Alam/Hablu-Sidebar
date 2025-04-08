@@ -2,14 +2,14 @@
 import { FC, SVGProps } from "react";
 
 type IconSvgProps = SVGProps<SVGSVGElement>;
-export const DashIcon: FC<IconSvgProps> = (props) => (
+export   const DashIcon: FC<IconSvgProps> = (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" className="icon flat-color" data-name="Flat Color" viewBox="0 0 24 24" {...props}>
     <path d="M22 4v3a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2M9 15H4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h5a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2" style={{ fill: '#2ca9bc' }} />
     <path d="M11 4v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2m9 7h-5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h5a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2" style={{ fill: '#fff' }} />
   </svg>
 );
 
-export const QuizIcon: FC<IconSvgProps> = (props) => (
+export  const QuizIcon: FC<IconSvgProps> = (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 32 32" {...props} ><path fill="#CFD8DC" d="M23 2H9a3 3 0 0 0-3 3v22a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3"/><path fill="#E53935" d="M21 26a1 1 0 0 1-.71-.29l-3-3a1.004 1.004 0 1 1 1.42-1.42l3 3A1.001 1.001 0 0 1 21 26"/><path fill="#E53935" d="M18 26a.998.998 0 0 1-.71-1.71l3-3a1.004 1.004 0 1 1 1.42 1.42l-3 3A1 1 0 0 1 18 26"/><path fill="#689F38" d="M12 26h-.06a1 1 0 0 1-.83-.55l-1-2a1 1 0 0 1 1.78-.9l.23.46 1.05-1.56a1 1 0 0 1 1.66 1.1l-2 3A1 1 0 0 1 12 26"/><path fill="#304046" d="M26 17H6v2h20z"/><path fill="#1565C0" d="M14 11h-3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1m-2-2h1V8h-1z"/><path fill="#304046" d="M21 15H11a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2M21 8h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2M21 11h-3a1 1 0 0 1 0-2h3a1 1 0 1 1 0 2"/><path fill="#EEE" d="M9 2a3 3 0 0 0-3 3v22a3 3 0 0 0 3 3h7V2z"/><path fill="#689F38" d="M13.17 21.45 12.12 23l-.23-.46a1 1 0 0 0-1.78.9l1 2a1 1 0 0 0 .83.55H12a1 1 0 0 0 .83-.45l2-3a1 1 0 0 0-1.66-1.1z"/><path fill="#616161" d="M16 17H6v2h10z"/><path fill="#1565C0" d="M14 11h-3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1m-2-2h1V8h-1z"/><path fill="#616161" d="M11 13a1 1 0 0 0 0 2h5v-2z"/></svg>
 );
 export const CourseIcon: FC<IconSvgProps> = (props) => (

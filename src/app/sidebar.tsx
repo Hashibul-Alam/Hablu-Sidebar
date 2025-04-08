@@ -12,7 +12,7 @@ import {
   QuizIcon,
   SupportIcon,
   UserIcon,
-} from './icon';
+} from '../../icon/icon';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Header from './header/header';
