@@ -83,7 +83,7 @@ export default function SidebarLayout() {
         </div>
       )}
 
-      <div className="fixed top-0 left-0 right-0 h-16 bg-slate-950/80 backdrop-blur-sm border-b border-slate-800 flex items-center px-6 z-40">
+      <div className="fixed top-0 left-0 right-0 h-20 bg-slate-950/80 backdrop-blur-sm border-b border-slate-800 flex items-center px-6 z-40">
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center gap-4">
             <button
@@ -93,7 +93,7 @@ export default function SidebarLayout() {
               <MenuIcon className={`transition-transform ${!isOpen ? 'rotate-180' : ''}`} />
             </button>
             <Image src="/logo.png" alt="Logo" width={40} height={40} />
-            {isOpen && <h1 className="text-white text-xl font-bold">Hablu-Programmer</h1>}
+          <h1 className="text-white text-xl font-bold">Hablu-Programmer</h1>
           </div>
           <Header />
         </div>
