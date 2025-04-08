@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { FaArrowLeft } from 'react-icons/fa';
 import Image from 'next/image';
 import {
   AchivedIcon,
@@ -9,6 +8,7 @@ import {
   ConceptIcon,
   CourseIcon,
   DashIcon,
+  MenuIcon,
   PaymentsIcon,
   QuizIcon,
   SupportIcon,
@@ -85,7 +85,7 @@ export default function Sidebar() {
 
      <div className='px-6'>
      <div
-        className={`bg-slate-950 border-r border-gray-700 h-screen py-4  flex flex-col transition-all duration-300 fixed top-0 left-0 ${
+        className={`bg-slate-950/80 backdrop-blur-sm border-r border-gray-700 h-screen py-4  flex flex-col transition-all duration-300 fixed top-0 left-0 ${
           isOpen ? 'w-80' : 'w-24'
         }`}
       >
@@ -98,10 +98,10 @@ export default function Sidebar() {
             )}
           </Link>
           <button
-            className="text-white bg-blue-600 p-2 rounded-full absolute right-0 top-0 -mr-8"
+            className="text-white p-2 rounded-full absolute right-0 top-0 -mr-8"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <FaArrowLeft
+            <MenuIcon
               className={`transition-transform ${!isOpen ? 'rotate-180' : ''}`}
             />
           </button>
